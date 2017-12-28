@@ -175,7 +175,7 @@ void limRemovePBCSessions(tpAniSirGlobal pMac, tSirMacAddr pRemoveMac,tpPESessio
             psessionEntry->pAPWPSPBCSession = pbc->next;
             vos_mem_free(pbc);
             return;
-	  }
+          }
         }
         prev = pbc;
         pbc = pbc->next;

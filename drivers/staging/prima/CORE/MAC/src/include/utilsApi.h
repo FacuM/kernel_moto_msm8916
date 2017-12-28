@@ -710,7 +710,7 @@ halRoundS32(tANI_S32 p)
       }
     }
 
-        return(k);
+    return(k);
 }
 
 // New functions for endianess conversion
