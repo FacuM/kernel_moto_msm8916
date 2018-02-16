@@ -9,3 +9,8 @@ config CLUSTER_PLUG
           This hotplug implementation always keeps the big cluster
           online, and only activates the little cluster for heavy
           parallel loads.
+
+config ZEN_DECISION
+  	bool "Zen Decision: MSM Userspace Handler"
+  	depends on SMP && FB
+  	default y
