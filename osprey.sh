@@ -1,5 +1,4 @@
 KERNEL_DIR=$PWD
-CCACHEDIR=/home/ccache
 Anykernel_DIR=$KERNEL_DIR/Anykernel2/osprey
 TOOLCHAINDIR=$(pwd)/toolchain/linaro-7.2
 DATE=$(date +"%d%m%Y")
@@ -14,7 +13,6 @@ export KBUILD_BUILD_USER="Aki"
 export KBUILD_BUILD_HOST="69"
 export CROSS_COMPILE=$TOOLCHAINDIR/bin/arm-eabi-
 export USE_CCACHE=1
-export CCACHE_DIR=$CCACHEDIR
 
 make osprey_defconfig
 make -j$( nproc --all )
